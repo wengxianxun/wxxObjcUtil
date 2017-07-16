@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9064298C1F1B02EC002F403A /* WxxIapStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 9064298B1F1B02EC002F403A /* WxxIapStore.m */; };
+		9064298F1F1B13E6002F403A /* ViewCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9064298E1F1B13E6002F403A /* ViewCollectionViewCell.m */; };
+		906429921F1B1A88002F403A /* IapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 906429911F1B1A88002F403A /* IapViewController.m */; };
+		906429961F1B1D73002F403A /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 906429951F1B1D73002F403A /* StoreKit.framework */; };
 		90BDE9301F0E807B008644D7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BDE92F1F0E807B008644D7 /* main.m */; };
 		90BDE9331F0E807B008644D7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BDE9321F0E807B008644D7 /* AppDelegate.m */; };
 		90BDE9361F0E807B008644D7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BDE9351F0E807B008644D7 /* ViewController.m */; };
@@ -35,6 +39,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9064298A1F1B02EC002F403A /* WxxIapStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WxxIapStore.h; sourceTree = "<group>"; };
+		9064298B1F1B02EC002F403A /* WxxIapStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WxxIapStore.m; sourceTree = "<group>"; };
+		9064298D1F1B13E6002F403A /* ViewCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewCollectionViewCell.h; sourceTree = "<group>"; };
+		9064298E1F1B13E6002F403A /* ViewCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewCollectionViewCell.m; sourceTree = "<group>"; };
+		906429901F1B1A88002F403A /* IapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IapViewController.h; sourceTree = "<group>"; };
+		906429911F1B1A88002F403A /* IapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IapViewController.m; sourceTree = "<group>"; };
+		906429951F1B1D73002F403A /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		90BDE92B1F0E807B008644D7 /* wxxObjcUtil.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wxxObjcUtil.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90BDE92F1F0E807B008644D7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		90BDE9311F0E807B008644D7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -58,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				906429961F1B1D73002F403A /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +90,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		906429821F1B0187002F403A /* wxxiOSCode */ = {
+			isa = PBXGroup;
+			children = (
+				906429831F1B0187002F403A /* iap */,
+			);
+			path = wxxiOSCode;
+			sourceTree = "<group>";
+		};
+		906429831F1B0187002F403A /* iap */ = {
+			isa = PBXGroup;
+			children = (
+				9064298A1F1B02EC002F403A /* WxxIapStore.h */,
+				9064298B1F1B02EC002F403A /* WxxIapStore.m */,
+			);
+			name = iap;
+			path = iad;
+			sourceTree = "<group>";
+		};
+		906429931F1B1A8D002F403A /* testvc */ = {
+			isa = PBXGroup;
+			children = (
+				906429901F1B1A88002F403A /* IapViewController.h */,
+				906429911F1B1A88002F403A /* IapViewController.m */,
+			);
+			name = testvc;
+			sourceTree = "<group>";
+		};
+		906429941F1B1D73002F403A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				906429951F1B1D73002F403A /* StoreKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		90BDE9221F0E807B008644D7 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +132,7 @@
 				90BDE9471F0E807B008644D7 /* wxxObjcUtilTests */,
 				90BDE9521F0E807B008644D7 /* wxxObjcUtilUITests */,
 				90BDE92C1F0E807B008644D7 /* Products */,
+				906429941F1B1D73002F403A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,15 +149,15 @@
 		90BDE92D1F0E807B008644D7 /* wxxObjcUtil */ = {
 			isa = PBXGroup;
 			children = (
+				906429931F1B1A8D002F403A /* testvc */,
+				906429821F1B0187002F403A /* wxxiOSCode */,
 				90BDE9311F0E807B008644D7 /* AppDelegate.h */,
 				90BDE9321F0E807B008644D7 /* AppDelegate.m */,
 				90BDE9341F0E807B008644D7 /* ViewController.h */,
 				90BDE9351F0E807B008644D7 /* ViewController.m */,
-				90BDE9371F0E807B008644D7 /* Main.storyboard */,
-				90BDE93A1F0E807B008644D7 /* Assets.xcassets */,
-				90BDE93C1F0E807B008644D7 /* LaunchScreen.storyboard */,
-				90BDE93F1F0E807B008644D7 /* Info.plist */,
 				90BDE92E1F0E807B008644D7 /* Supporting Files */,
+				9064298D1F1B13E6002F403A /* ViewCollectionViewCell.h */,
+				9064298E1F1B13E6002F403A /* ViewCollectionViewCell.m */,
 			);
 			path = wxxObjcUtil;
 			sourceTree = "<group>";
@@ -117,6 +165,10 @@
 		90BDE92E1F0E807B008644D7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				90BDE9371F0E807B008644D7 /* Main.storyboard */,
+				90BDE93A1F0E807B008644D7 /* Assets.xcassets */,
+				90BDE93C1F0E807B008644D7 /* LaunchScreen.storyboard */,
+				90BDE93F1F0E807B008644D7 /* Info.plist */,
 				90BDE92F1F0E807B008644D7 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -209,6 +261,11 @@
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 2V5YGEBZ37;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+						};
 					};
 					90BDE9431F0E807B008644D7 = {
 						CreatedOnToolsVersion = 8.3.3;
@@ -275,8 +332,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				90BDE9361F0E807B008644D7 /* ViewController.m in Sources */,
+				9064298F1F1B13E6002F403A /* ViewCollectionViewCell.m in Sources */,
 				90BDE9331F0E807B008644D7 /* AppDelegate.m in Sources */,
+				906429921F1B1A88002F403A /* IapViewController.m in Sources */,
 				90BDE9301F0E807B008644D7 /* main.m in Sources */,
+				9064298C1F1B02EC002F403A /* WxxIapStore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,8 +489,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2V5YGEBZ37;
 				INFOPLIST_FILE = wxxObjcUtil/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.wxx.wxxObjcUtil;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wmm.txt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -441,8 +502,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2V5YGEBZ37;
 				INFOPLIST_FILE = wxxObjcUtil/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.wxx.wxxObjcUtil;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wmm.txt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -512,6 +574,7 @@
 				90BDE95A1F0E807B008644D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		90BDE95B1F0E807B008644D7 /* Build configuration list for PBXNativeTarget "wxxObjcUtilTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +583,7 @@
 				90BDE95D1F0E807B008644D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		90BDE95E1F0E807B008644D7 /* Build configuration list for PBXNativeTarget "wxxObjcUtilUITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +592,7 @@
 				90BDE9601F0E807B008644D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
